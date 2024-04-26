@@ -28,7 +28,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<<profiles>
+	<profiles>
 		<profile>
 		<id>strict-jdk-21</id>
 		<activation>
