@@ -1,0 +1,21 @@
+name: 617 error
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Action
+        uses: actions/checkout@v4
+      - name: 'Set up Java'
+        uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: 'temurin'
+
+      - name: Show Toolchain
+        run: cat ~/.m2/toolchains.xml
+      - name: Maven Install
+        run: mvn clean install
