@@ -15,7 +15,6 @@ jobs:
           java-version: |
             21
             17
-            14
             11
             8
           distribution: 'temurin'
@@ -23,6 +22,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: |
+            14
             7
             6
           distribution: 'zulu'
