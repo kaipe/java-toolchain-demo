@@ -32,5 +32,7 @@ jobs:
         run: pwd
       - name: List current directory
         run: ls -l
+      - name: Maven version
+        run: mvn --version
       - name: Maven Install
         run: mvn clean install
