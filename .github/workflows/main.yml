@@ -29,8 +29,8 @@ jobs:
             8
             21
           distribution: 'temurin'
-      - name: Show Toolchain
-        run: cat ~/.m2/toolchains.xml
+      - name: Show Toolchain and settings
+        run: cat ~/.m2/toolchains.xml ~/.m2/settings.xml
       - name: Show location
         run: pwd
       - name: List current directory
