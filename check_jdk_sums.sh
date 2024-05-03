@@ -6,5 +6,5 @@ jdks() {
 
 jdks | while read jdkhome; do
   cd "$jdkhome"
-  find . -type f | sort | xargs sha256sum | sha256sum | sed "s%^%$jdkhome: %"
+  find . -type f | sort | wc -l | sed "s%^%$jdkhome: %"
 done
