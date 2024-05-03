@@ -35,6 +35,8 @@ jobs:
         run: pwd
       - name: List current directory
         run: ls -l
+      - name: Scan JDKs
+        run: ./check_jdk_sums.sh
       - name: Maven version
         run: mvn --version
       - name: Maven Install
