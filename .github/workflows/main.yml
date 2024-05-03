@@ -36,7 +36,7 @@ jobs:
       - name: List current directory
         run: ls -l
       - name: Scan JDKs
-        run: ../check_jdk_sums.sh
+        run: grep -oP '(?<=<jdkHome>)[^<]++' ~/.m2/toolchains.xml
       - name: Maven version
         run: mvn --version
       - name: Maven Install
