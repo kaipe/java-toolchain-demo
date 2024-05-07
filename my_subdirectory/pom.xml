@@ -67,5 +67,7 @@
 			<url>https://maven.pkg.github.com/kaipe/java-toolchain-demo</url>
 		</repository>
 	</distributionManagement>
-
+	<scm>
+		<connection>scm:git:https://github.com/kaipe/java-toolchain-demo.git</connection>
+	</scm>
 </project>
