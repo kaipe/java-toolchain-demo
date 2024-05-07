@@ -64,7 +64,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://maven.pkg.github.com/kaipe/whatevermvn</url>
+			<url>https://maven.pkg.github.com/kaipe/java-toolchain-demo</url>
 		</repository>
 	</distributionManagement>
 
