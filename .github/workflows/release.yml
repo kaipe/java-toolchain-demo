@@ -29,8 +29,8 @@ jobs:
             8
             21
           distribution: 'temurin'
-      - name: Show Toolchain
-        run: cat ~/.m2/toolchains.xml
+      - name: Break release
+        run: echo break release ...; echo broken | grep 'not broken'
       - name: Show location
         run: pwd
       - name: Maven version
