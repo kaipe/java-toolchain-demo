@@ -30,7 +30,7 @@ jobs:
             21
           distribution: 'temurin'
       - name: Break release
-        run: echo break release ...; echo broken | grep 'not broken'
+        run: echo break release ...; echo continue | perl -pe 's/$/ release' | grep -o 'continue ....'
       - name: Show location
         run: pwd
       - name: Maven version
