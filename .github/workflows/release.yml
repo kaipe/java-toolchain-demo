@@ -35,6 +35,10 @@ jobs:
         run: pwd
       - name: Maven version
         run: mvn --version
+      - name: Configure Git User
+        run: |
+          git config user.email "actions"
+          git config user.name "GitHub Actions"
       - name: Maven Release
         run: mvn --batch-mode release:prepare release:perform
         env:
