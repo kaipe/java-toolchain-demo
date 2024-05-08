@@ -62,7 +62,7 @@
 		</build>
 	<distributionManagement>
 		<repository>
-			<id>github</id>
+			<id>githb</id>
 			<name>GitHub Packages</name>
 			<url>https://maven.pkg.github.com/kaipe/java-toolchain-demo</url>
 		</repository>
