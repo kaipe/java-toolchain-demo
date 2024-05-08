@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.java.toolchain.demo</groupId>
 	<artifactId>java-toolchain-demo</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<name>java-toolchain-demo</name>
 	<description>Demo project for Java Toolchain Demo</description>
 	<properties>
@@ -68,6 +68,6 @@
 	</distributionManagement>
 	<scm>
 		<connection>scm:git:https://github.com/kaipe/java-toolchain-demo.git</connection>
-	  <tag>HEAD</tag>
+	  <tag>java-toolchain-demo-0.0.4</tag>
   </scm>
 </project>
