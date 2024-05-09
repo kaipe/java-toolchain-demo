@@ -7,5 +7,8 @@ class JavaToolchainDemoApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
+	@Test
+	void moreStuff() {
+		throw new AssertionError("A failure");
+	}
 }
