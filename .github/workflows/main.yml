@@ -38,6 +38,9 @@ jobs:
       - name: Scan JDKs
         run: grep -oP '(?<=<jdkHome>)[^<]++' ~/.m2/toolchains.xml
       - name: Maven version
-        run: mvn --version
-      - name: Maven Install
-        run: echo Ignore installation
+        run: mvn surefire-report:report
+      - name: Archive site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: target/site
