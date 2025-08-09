@@ -34,7 +34,7 @@ jobs:
         run: cat ~/.m2/toolchains.xml ~/.m2/settings.xml
       - name: Have toolchain provide 25-ea as JDK-25
         run: |
-          perl -i -pe 's/>25-ea</>25</' ~/.m2/toolchains.xml
+          perl -pe 's/>25-ea</>25</' -i ~/.m2/toolchains.xml
           cat ~/.m2/toolchains.xml
       - name: Show location
         run: pwd
