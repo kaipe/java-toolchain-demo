@@ -33,6 +33,7 @@ jobs:
             11
             8
             21
+            25-ea
           distribution: 'temurin'
       - name: Show Toolchain and settings
         run: cat ~/.m2/toolchains.xml ~/.m2/settings.xml
